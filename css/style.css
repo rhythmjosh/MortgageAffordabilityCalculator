@@ -1,0 +1,46 @@
+body{
+  background-color:lightgrey;
+}
+#input_wrapper{
+  margin-left:10px;
+  width:50%;
+  border: 1px solid grey;
+  border-radius:20px;
+  background-color:grey
+}
+.inner_wrapper{
+   background-color:whitesmoke;
+  padding:15px 10px 10px 20px;
+  color:#6e6e6e;
+}
+h1{
+  padding:10px 20px 10px 20px;
+  color:whitesmoke;
+  background:grey;
+  font-family:sans-serif;
+}
+form fieldset{
+  border:none;
+}
+form legend{
+  font-size:18px;
+  font-weight:bold;
+}
+input, label{
+  margin:5px 20px 15px 0;
+}
+.required{
+  color:red;
+}
+
+.form_input input{
+  margin-right:10px;
+
+}
+.form_input{
+  display:block;
+}
+.form_input label{
+  text-align:right;
+  width:50%;
+}

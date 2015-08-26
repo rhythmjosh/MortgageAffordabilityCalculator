@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mortgage Affordability Rate Calculator</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css"/>
+</head>
+<body>
+  <div id="input_wrapper">
+    <h1>Mortgage Affordability Rate Calculator</h1>
+    <div class="inner_wrapper">
+      <form>
+        <fieldset>
+          <legend>Fill your information here:</legend>
+          <div class="form_input">
+            <label for="identifier">User ID<span class="required">*</span></label>
+            <input type="text" id="identifier" name="identifier"/>
+          </div>
+          <div class="form_input">
+            <label for="annualIncome">Annual Income<span class="required">*</span></label>
+            <input type="text" id="annualIncome" name="annual_income"/>
+          </div>
+          <div class="form_input">
+            <label for="monthlyPayment">Estimated monthly payment<span class="required">*</span></label>
+            <input type="text" id="monthlyPayment" name="monthly_payment"/>
+          </div>
+          <div class="form_input">
+            <label for="downPayment">Down Payment<span class="required">*</span></label>
+            <input type="text" id="downPayment" name="down_payment"/>
+          </div>
+          <div class="form_input">
+            <label for="monthlyDebts">Monthly Debts<span class="required">*</span></label>
+            <input type="text" id="monthlyDebts" name="monthly_debts"/>
+          </div>
+          <div class="form_input">
+            <label for="rate">Annual Interest rate on loans</label>
+            <input type="text" id="rate" name="rate"/>
+          </div>
+          <div class="form_input">
+            <label>Schedule for payment</label> <br/>
+            <input type="radio" name="schedule" value="yearly"/>Yearly<br/>
+            <input type="radio" name="schedule" value="monthly"/>Monthly<br/>
+            <input type="radio" name="schedule" value="both"/>Both<br/>
+            <input type="radio" name="schedule" value="none"/>None
+          </div>
+          <div class="form_input">
+            <label for="term">Term of loan (months)</label>
+            <input type="text" id="term" name="term"/><br/>
+          </div>
+          <div class="form_input">
+            <label for="debtToIncome">Debt to Income</label>
+            <input type="text" id="debtToIncome" name="debt_to_income"/>
+          </div>
+          <div class="form_input">
+            <label for="incomeTax">Income Tax</label>
+            <input type="text" id="incomeTax" name="income_tax"/><br/>
+          </div>
+          <div class="form_input">
+            <label>Estimate</label> <br/>
+            <input type="radio" name="estimate" value="true"/>True<br/>
+            <input type="radio" name="estimate" value="false"/>False
+          </div>
+          <div class="form_input">
+            <label for="propertyTax">Property Tax</label>
+            <input type="text" id="propertyTax" name="property_tax"/>
+          </div>
+          <div class="form_input">
+            <label for="hazard">Annual Hazard Insurance</label>
+            <input type="text" id="hazard" name="hazard_insurance"/><br/>
+          </div>
+          <div class="form_input">
+            <label for="pmi">PMI</label>
+            <input type="text" id="pmi" name="pmi"/>
+          </div>
+          <div class="form_input">
+            <label for="hoa">HOA</label>
+            <input type="text" id="hoa" name="hoa"/>
+          </div>
+          <div class="form_input">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip"/>
+          </div>
+
+          <output name="result"></output>
+
+
+        </fieldset>
+
+
+      </form>
+    </div>
+
+  </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
