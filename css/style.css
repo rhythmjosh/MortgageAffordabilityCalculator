@@ -2,7 +2,6 @@ body{
   background-color:lightgrey;
 }
 #input_wrapper{
-  margin-left:10px;
   width:50%;
   border: 1px solid grey;
   border-radius:20px;
@@ -44,3 +43,17 @@ input, label{
   text-align:right;
   width:50%;
 }
+#input_wrapper, #output_wrapper{
+  float:left;
+  margin:5px 20px 0 20px;
+ }
+
+ #button{
+   margin:200px 30px 0 10px;
+   width:20%;
+   height:40px;
+   display:block;
+   font-size:25px;
+   border-radius:10px;
+   color:#6e6e6e;
+ }
