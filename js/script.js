@@ -11,10 +11,26 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    var userId = document.getElementById("identifier").value;
+    var annualIncome = document.getElementById("annualIncome").value;
     //Show results when button clicked. Hide image and button on clicking
     $("#button").click(function(){
         $("#result").show(500);
         $("#houseImage").hide();
         $("#button").hide();
+        if(userId != ){
+          $("#message1").css("display","block");
+        }
+        else if(annualIncome === null || isNaN(annualIncome) == true){
+            $("#message2").css("display","block");
+        }
+        else if()
     });
+
+    calculateMortgage();
 });
+
+function calculateMortgage(){
+    var mortgageAmount;
+    document.getElementById("output_wrapper").innerHTML = "<h2>Your affordable mortgage is $" + mortgageAmount + "</h2>";
+}
